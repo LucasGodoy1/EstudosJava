@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;aplicacao.ProgramaTeste2&apos; to &apos;ProgramacomClasse&apos;&#x0D;&#x0A;- Original project: &apos;Vetores2&apos;&#x0D;&#x0A;- Original element: &apos;aplicacao.ProgramaTeste2&apos;&#x0D;&#x0A;- Renamed element: &apos;aplicacao.ProgramacomClasse&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ProgramaTeste2&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;aplicacao{ProgramaTeste2.java[ProgramaTeste2" matchStrategy="1" name="ProgramacomClasse" qualified="false" references="true" similarDeclarations="false" stamp="1693140267508" textual="false" version="1.0"/>
+</session>

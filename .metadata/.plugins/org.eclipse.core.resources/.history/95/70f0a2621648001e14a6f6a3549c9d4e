@@ -1,0 +1,25 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Numero de linhas: ");
+		int linha = sc.nextInt();
+		System.out.println("Numero de colunas: ");
+		int coluna = sc.nextInt();
+		
+		int[][] matriz = new int[linha][coluna];
+		
+		System.out.println(matriz);
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

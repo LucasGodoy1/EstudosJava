@@ -1,0 +1,42 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Quantas Pessoas serão cadastradas? ");
+		int n = sc.nextInt();
+		String[] nome = new String[n];
+		int[] idade = new int[n];
+		double[] altura = new double[n];
+		String[] menor = new String[n];
+
+		for (int i = 0 ; i < n ; i ++) {
+			System.out.println("Nome: ");
+			nome[i] = sc.nextLine();
+			System.out.println("idade:" );
+			idade [i] = sc.nextInt();
+			altura[i] = sc.nextDouble();
+			if (idade[i] < 16) {
+				menor[i] = nome[i];
+			}
+			
+		}
+		
+		double soma = 0.0;
+		for (int i= 0 ; i < n ; i ++) {
+			soma = soma + altura[i];
+		}
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,22 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidade.Locacao;
+
+public class Analise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locacao[] vetor = new Locacao[10];
+		System.out.println("Quantos Quartos deseja reservar? ");
+		int n = sc.nextInt();
+		
+		
+		
+		
+		
+
+	}
+
+}

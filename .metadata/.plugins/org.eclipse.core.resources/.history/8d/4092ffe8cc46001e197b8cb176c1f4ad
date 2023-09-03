@@ -1,0 +1,11 @@
+package entidade;
+
+public class Funcionarios {
+	private Integer id;
+	private String  nome;
+	private double salario;
+	
+	
+	
+	
+}

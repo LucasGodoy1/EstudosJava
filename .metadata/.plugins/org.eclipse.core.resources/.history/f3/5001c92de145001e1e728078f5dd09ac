@@ -1,0 +1,18 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidade.Locacao;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		Locacao[] lista = new Locacao[10];
+		System.out.println("Quantos Quartos serao reservados? ");
+		int n = sc.nextInt();
+		
+
+	}
+
+}

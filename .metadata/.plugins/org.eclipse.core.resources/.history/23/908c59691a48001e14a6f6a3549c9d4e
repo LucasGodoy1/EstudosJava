@@ -1,0 +1,17 @@
+package entidade;
+
+public class TratandoMatriz {
+	
+	
+
+	
+	public static int procurandoNumero( int[][] matriz) {
+		for (int i =0 ; i < matriz.length ; i ++) {
+			
+		}
+		
+		
+	}
+	
+	
+}

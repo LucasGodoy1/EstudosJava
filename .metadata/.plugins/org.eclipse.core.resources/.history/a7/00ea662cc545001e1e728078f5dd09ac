@@ -1,0 +1,21 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Quantos Numeros deseja digitar ?");
+		int n = sc.nextInt();
+		String[] listaNome = new String[n];
+		for (int i = 0 ; i < n ; i ++) {
+			System.out.println("Digite um numero: ");
+			sc.nextLine();
+			listaNome[i] = sc.nextLine();
+			
+		}
+
+	}
+
+}

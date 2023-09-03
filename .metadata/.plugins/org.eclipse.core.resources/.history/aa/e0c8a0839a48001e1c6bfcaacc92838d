@@ -1,0 +1,23 @@
+package entidade;
+
+import java.util.Scanner;
+
+public class MatrizAcessorios {
+	
+	
+		
+	
+
+	public static int gravandoNumeros(int[][] lista, int linha , int coluna) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o Numero: ");
+		for (int l = 0 ; l < linha ; l++) {
+			for (int c = 0 ; c < coluna ; c ++) {
+				 lista[l][c] = sc.nextInt();
+			}
+		}
+		
+	}
+	
+	
+}

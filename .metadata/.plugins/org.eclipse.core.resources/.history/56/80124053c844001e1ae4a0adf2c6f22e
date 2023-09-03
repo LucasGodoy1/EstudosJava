@@ -1,0 +1,38 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidade.Pessoa;
+
+public class ProgramaTeste2 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Numero de cadastro: ");
+		int n = sc.nextInt();
+		Pessoa[] cadastro = new Pessoa[n];
+		
+		for (int i = 0 ; i < n ; i ++) {
+			sc.nextLine();
+			System.out.println("Nome: ");
+			String nome = sc.nextLine();
+			System.out.println("Idade: ");
+			int idade = sc.nextInt();
+			System.out.println("Altura: ");
+			double altura = sc.nextDouble();
+			cadastro[i] = new Pessoa(nome, idade, altura);
+			
+		}
+		
+		System.out.println(cadastro.toString());
+		
+		
+		
+		
+		
+
+	}
+
+}

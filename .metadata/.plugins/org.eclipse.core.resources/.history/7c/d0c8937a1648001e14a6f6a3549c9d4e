@@ -1,0 +1,29 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Numero de linhas: ");
+		int linha = sc.nextInt();
+		System.out.println("Numero de colunas: ");
+		int coluna = sc.nextInt();
+		
+		int[][] matriz = new int[linha][coluna];
+		
+		for (int i = 0 ; i < matriz.length ; i ++) {
+			for (int c = 0 ; c < matriz[i][c] ; c ++) {
+				System.out.println("Numeros da matriz: ");
+				matriz[i][c] = sc.nextInt();
+			}
+		}
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

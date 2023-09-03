@@ -1,0 +1,27 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Matriz {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Qual o Tamnho da matriz: ");
+		int n = sc.nextInt(); 
+		int [][] matriz = new int[n][n];
+		
+		for (int L = 0 ; L < n ; L++) {
+			for (int c = 0 ; c < n ; c++) {
+				System.out.println("Digite um numero: ");
+				matriz[L][c] = sc.nextInt();
+			}
+		} System.out.println("-------------");
+		for (int L = 0 ; L < n ; L++) {
+			for (int c = 0 ; c < n ; c++) {
+				System.out.println(matriz[L][c] );
+			}
+		}
+
+	}
+
+}
