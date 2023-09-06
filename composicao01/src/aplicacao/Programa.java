@@ -62,9 +62,7 @@ SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
 		
 
-		
-		
-		sc.close();
+
 	}
 
 }
