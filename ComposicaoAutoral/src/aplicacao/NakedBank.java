@@ -23,6 +23,9 @@ public class NakedBank {
 		if (escolha != 1 && escolha != 2) {
 			System.out.println("Comando Invalido");
 			escolha = MenuBasico.menuInicial(escolha);
+		}else if (escolha ==2) {
+			System.out.println(" Serviço em Manutencao !!");
+			System.out.println("Tente Novamente Mais Tarde...");
 		}
 
 		if (escolha == 1) {
