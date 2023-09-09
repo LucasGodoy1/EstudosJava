@@ -63,6 +63,19 @@ public class NakedBank {
 				MenuBasico.exibirMenu();
 			}else {System.out.println("Programa encerrado...");}
 			
+			MenuBasico.escolhaMenu(cliente0, escolha);
+					
+			while (true) {
+			System.out.println("--Voltar para Inicio-- \n[1] Sim \n[2] para sair...");
+			escolha = sc.nextInt();
+			if (escolha == 1) {
+				MenuBasico.exibirMenu();
+				MenuBasico.escolhaMenu(cliente0, escolha);
+				continue;
+			}else {System.out.println("Programa encerrado..."); 
+				break;	}
+			}
+			
 
 
 		}
