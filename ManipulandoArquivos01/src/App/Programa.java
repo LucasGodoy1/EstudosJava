@@ -1,3 +1,7 @@
+/*Bloco try-with-resources
+• É um bloco try que declara um ou mais recursos, e garante que esses
+recursos serão fechados ao final do bloco
+• Disponível apartir do Java 7 em diante */
 package App;
 
 import java.io.BufferedReader;
@@ -9,14 +13,10 @@ public class Programa {
 	public static void main(String[] args) {
 		
 		String caminho = "D:\\eclipse-classe\\qualquer.txt";
-		FileReader fr = null;
-		BufferedReader br = null;
+
 		
-		try {
-//tambem é possivel usar 
-//br = new BufferedReader(FileReader(caminho));
-			fr = new FileReader(caminho);
-			br = new BufferedReader(fr);
+		try(BufferedReader br = new BufferedReader(new FileReader(caminho));) {
+
 			String linha = br.readLine();
 			while (linha != null) { //enquanto linha for diferente de nulo significa que foi lido com sucesso
 				System.out.println(linha);
@@ -26,19 +26,7 @@ public class Programa {
 		}catch(IOException e) {
 			System.out.println("ERRO! " + e.getMessage());
 		}
-		finally {
-			try {
-				
-				if (br != null) {
-					br.close();
-				}
-				if (fr != null) {
-					fr.close();
-				}
-			}catch(IOException e) {
-				e.printStackTrace();
-			}
-		}
+	
 
 	}
 
