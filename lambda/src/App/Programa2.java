@@ -22,6 +22,14 @@ public class Programa2 {
 
         // Executa a operação de multiplicação e imprime o resultado
         System.out.println(calc.executar(10, 5));
+        
+        System.out.println(calc.teste());
+        System.out.println(Calculo.teste2());
+        
+        
+        
     }
+    
+
 
 }
