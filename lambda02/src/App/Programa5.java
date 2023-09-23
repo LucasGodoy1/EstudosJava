@@ -13,7 +13,7 @@ public class Programa5 {
 		System.out.println(vezesDois.apply(10));
 		System.out.println(aoQuadrado.apply(10)); 
 		
-		System.out.println("----------");
+		System.out.println("-------------------");
 		
 		int result = maisDois        //0 + 2 = 2
 				.andThen(vezesDois)  // 2 * 2 = 4
