@@ -13,7 +13,7 @@ public class Match {
 		Aluno a1 = new Aluno("Ana", 7.1);
         Aluno a2 = new Aluno("Joao", 8.1);
         Aluno a3 = new Aluno("maria", 7.2);
-        Aluno a4 = new Aluno("luiz", .10);
+        Aluno a4 = new Aluno("luiz", 10.0);
 
         
         List<Aluno> alunos = Arrays.asList(a1, a2, a3, a4);

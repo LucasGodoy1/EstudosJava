@@ -1,5 +1,7 @@
 package entidade;
 
+import java.util.Objects;
+
 public class Aluno {
 	private String nome;
 	private Double nota;
@@ -24,6 +26,32 @@ public class Aluno {
 	public void setNota(Double nota) {
 		this.nota = nota;
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno nome " + nome + " nota " + nota ;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(nome, nota);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aluno other = (Aluno) obj;
+		return Objects.equals(nome, other.nome) && Objects.equals(nota, other.nota);
+	}
+	
+	
+	
+	
 	
 	
 
