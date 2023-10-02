@@ -9,7 +9,7 @@ public class CaixaObjetoTeste {
 		caixaA.guardar(2.3);
 		
 		Double coisaA = (Double) caixaA.abrir();
-		System.out.println(coisa);
+		System.out.println(coisaA);
 		
 		CaixaObjeto caixaB = new CaixaObjeto();
 		
