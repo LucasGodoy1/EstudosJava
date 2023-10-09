@@ -16,6 +16,7 @@ public class CompraDolar {
 		double dolares = sc.nextDouble();
 		System.out.printf("Total + IOF R$ %.2f", DolarNaMao.dolarHoje(cotacao, dolares));
 
+		System.out.println("teste");
 	}
 
 }
