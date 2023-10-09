@@ -16,9 +16,6 @@ public class Par <C, V>{
 	}
 
 
-
-
-
 	public V getValor() {
 		return valor;
 	}
@@ -49,9 +46,5 @@ public class Par <C, V>{
 		return Objects.equals(chave, other.chave);
 	}
 
-	
-	
-	
-	
 
 }
