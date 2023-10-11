@@ -9,6 +9,8 @@ import entidade.FabricaConexao;
 public class teste {
 
 	public static void main(String[] args) throws SQLException {
+		
+		// variavel recebendo o metodo que foi criado para conexão
 		Connection conexao = FabricaConexao.getConexao();
 		
 		System.out.println(conexao);

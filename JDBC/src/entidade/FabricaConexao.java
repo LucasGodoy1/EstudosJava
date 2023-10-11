@@ -10,7 +10,7 @@ public class FabricaConexao {
 
 	public static Connection getConexao() {
 		try {
-			final String url = "jdbc:mysql://localhost?verifyservercertificate=false&usessl=true";
+			final String url = "jdbc:mysql://localhost/curso_java?verifyservercertificate=false&usessl=true";
 			final String usuario = "root";
 			final String senha = "123456";
 			return DriverManager.getConnection(url, usuario, senha);
