@@ -1,5 +1,7 @@
 package App;
-
+/*  forma mais simples de Statement. Ele é usado para executar consultas SQL simples
+ *  sem parâmetros. No entanto, ele não é seguro contra SQL Injection e não deve
+ *  ser usado com consultas que envolvem dados diretamente.*/
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
