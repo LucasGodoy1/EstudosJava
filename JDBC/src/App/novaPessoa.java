@@ -30,8 +30,11 @@ public class novaPessoa {
         // Preparamos o comando SQL usando um PreparedStatement.
         PreparedStatement stmt = ctn.prepareStatement(sql);
 
-        // Atribuímos o valor do nome ao espaço reservado no PreparedStatement.
+        // Atribuímos o id mais o nome ao espaço reservado no Prepar-edStatement.
         stmt.setString(1, nome);
+        
+        // Atribuímos o id mais o numero ao espaço reservado no PreparedStatement.
+        stmt.setInt(2, 100);
 
         // Executamos o comando SQL de forma segura.
         stmt.execute();
