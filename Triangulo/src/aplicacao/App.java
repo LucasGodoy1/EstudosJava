@@ -20,22 +20,15 @@ public class App {
         triangulo2.b = sc.nextDouble();
         triangulo2.c = sc.nextDouble();
 
-        double t = (triangulo1.a + triangulo1.b + triangulo1.c) /2.0;
-        System.out.println("valor do T " + t);
-        System.out.println();
+        System.out.printf("Area Triangulo 1: %.2f\n", triangulo1.calculaArea());
 
-        double area1 = Math.sqrt(t * (t - triangulo1.a) * (t - triangulo1.b) * (t - triangulo1.c));
-        System.out.printf("Area Triangulo 1: %.2f\n", area1);
-
-        Double area2 = Math.sqrt(t * (t - triangulo2.a) * (t - triangulo2.b) * (t - triangulo2.c));
-
-        System.out.printf("Area Triangulo 2: %.2f\n", area1);
-        if (area2 > area1){
-            System.out.println(String.format("A maior area é trianguolo 2 - > %.2f", area2));
-        }else if (area2 == area1){
-            System.out.println(String.format("Os dois triangulos tem o mesmo tamanho -> %.2f", area1));
+        System.out.printf("Area Triangulo 2: %.2f\n", triangulo2.calculaArea());
+        if (triangulo2.calculaArea() > triangulo1.calculaArea()){
+            System.out.println(String.format("A maior area é trianguolo 2 - > %.2f", triangulo2.calculaArea()));
+        }else if (triangulo1.calculaArea() == triangulo2.calculaArea()){
+            System.out.println(String.format("Os dois triangulos tem o mesmo tamanho -> %.2f", triangulo1.calculaArea()));
         }else{
-            System.out.println(String.format("A maior area é trianguolo 1 -> %.2f", area1));
+            System.out.println(String.format("A maior area é trianguolo 1 -> %.2f", triangulo1.calculaArea()));
         }
 
 
