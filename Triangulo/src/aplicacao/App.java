@@ -12,6 +12,9 @@ public class App {
         System.out.println("Entre com os lados do triangulo2");
         Triangulo triangulo2 = new Triangulo(sc.nextDouble(), sc.nextDouble(), sc.nextDouble());
 
+
+        triangulo1.calculaArea();
+
         sc.close();
 
         System.out.printf("Area Triangulo 1: %.2f\n", triangulo1.calculaArea());
