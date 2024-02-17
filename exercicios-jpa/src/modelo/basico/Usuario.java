@@ -1,12 +1,16 @@
 package modelo.basico;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.security.Identity;
 
 @Entity
 public class Usuario {
     //por padrão qualquer atributo de uma classe será mapeado apra uma coluna no banco de dados
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //estrategia de geração de ID
     private long id;
 
     private String nome;
