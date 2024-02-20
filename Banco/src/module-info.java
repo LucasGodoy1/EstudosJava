@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Banco {
+module aulajpa {
 }
